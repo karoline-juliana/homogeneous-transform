@@ -30,6 +30,16 @@ ament_target_dependencies(homogeneous_transform_server rclcpp std_msgs)
 add_executable(homogeneous_transform_client src/homogeneous_transform_client.cpp)
 ament_target_dependencies(homogeneous_transform_client rclcpp std_msgs)
 
+install(TARGETS
+    homogeneous_transform_client
+    homogeneous_transform_server
+  DESTINATION lib/${PROJECT_NAME})
+
+rosidl_get_typesupport_target(cpp_typesupport_target
+${PROJECT_NAME} rosidl_typesupport_cpp)
+target_link_libraries(homogeneous_transform_client "${cpp_typesupport_target}")
+target_link_libraries(homogeneous_transform_server "${cpp_typesupport_target}")
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
