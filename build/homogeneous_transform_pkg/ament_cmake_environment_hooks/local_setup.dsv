@@ -1,0 +1,4 @@
+source;share/homogeneous_transform_pkg/environment/ament_prefix_path.sh
+source;share/homogeneous_transform_pkg/environment/library_path.sh
+source;share/homogeneous_transform_pkg/environment/path.sh
+source;share/homogeneous_transform_pkg/environment/pythonpath.sh

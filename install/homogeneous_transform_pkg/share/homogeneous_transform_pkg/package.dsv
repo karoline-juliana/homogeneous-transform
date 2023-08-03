@@ -1,0 +1,5 @@
+source;share/homogeneous_transform_pkg/local_setup.bash
+source;share/homogeneous_transform_pkg/local_setup.dsv
+source;share/homogeneous_transform_pkg/local_setup.ps1
+source;share/homogeneous_transform_pkg/local_setup.sh
+source;share/homogeneous_transform_pkg/local_setup.zsh

@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from homogeneous_transform_pkg/msg/TransformResponse.msg
+// generated code does not contain a copyright notice
+
+
+module homogeneous_transform_pkg {
+  module msg {
+    struct TransformResponse {
+      boolean success;
+
+      double transformed_x;
+
+      double transformed_y;
+
+      double transformed_z;
+
+      string message;
+    };
+  };
+};

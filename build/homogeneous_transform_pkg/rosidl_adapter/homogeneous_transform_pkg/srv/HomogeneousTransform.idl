@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from homogeneous_transform_pkg/srv/HomogeneousTransform.srv
+// generated code does not contain a copyright notice
+
+#include "homogeneous_transform_pkg/msg/TransformRequest.idl"
+#include "homogeneous_transform_pkg/msg/TransformResponse.idl"
+
+module homogeneous_transform_pkg {
+  module srv {
+    struct HomogeneousTransform_Request {
+      homogeneous_transform_pkg::msg::TransformRequest request;
+    };
+    struct HomogeneousTransform_Response {
+      homogeneous_transform_pkg::msg::TransformResponse response;
+    };
+  };
+};

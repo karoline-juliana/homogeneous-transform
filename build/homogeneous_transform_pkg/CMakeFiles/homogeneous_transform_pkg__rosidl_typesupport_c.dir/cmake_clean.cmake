@@ -1,0 +1,18 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/homogeneous_transform_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/homogeneous_transform_pkg/msg/transform_request__type_support.cpp.o"
+  "CMakeFiles/homogeneous_transform_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/homogeneous_transform_pkg/msg/transform_request__type_support.cpp.o.d"
+  "CMakeFiles/homogeneous_transform_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/homogeneous_transform_pkg/msg/transform_response__type_support.cpp.o"
+  "CMakeFiles/homogeneous_transform_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/homogeneous_transform_pkg/msg/transform_response__type_support.cpp.o.d"
+  "CMakeFiles/homogeneous_transform_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/homogeneous_transform_pkg/srv/homogeneous_transform__type_support.cpp.o"
+  "CMakeFiles/homogeneous_transform_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/homogeneous_transform_pkg/srv/homogeneous_transform__type_support.cpp.o.d"
+  "libhomogeneous_transform_pkg__rosidl_typesupport_c.pdb"
+  "libhomogeneous_transform_pkg__rosidl_typesupport_c.so"
+  "rosidl_typesupport_c/homogeneous_transform_pkg/msg/transform_request__type_support.cpp"
+  "rosidl_typesupport_c/homogeneous_transform_pkg/msg/transform_response__type_support.cpp"
+  "rosidl_typesupport_c/homogeneous_transform_pkg/srv/homogeneous_transform__type_support.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/homogeneous_transform_pkg__rosidl_typesupport_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

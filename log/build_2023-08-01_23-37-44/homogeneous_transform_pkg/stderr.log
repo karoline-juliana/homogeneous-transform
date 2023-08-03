@@ -1,0 +1,14 @@
+[01m[K/home/kjcs/homogeneous_transform_ws/src/homogeneous_transform_pkg/src/homogeneous_transform_server.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Khomogeneous_transform_pkg/srv/homogeneous_transform.hpp: Arquivo ou diretório inexistente
+    2 | #include [01;31m[K"homogeneous_transform_pkg/srv/homogeneous_transform.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+[01m[K/home/kjcs/homogeneous_transform_ws/src/homogeneous_transform_pkg/src/homogeneous_transform_client.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Khomogeneous_transform_pkg/srv/homogeneous_transform.hpp: Arquivo ou diretório inexistente
+    2 | #include [01;31m[K"homogeneous_transform_pkg/srv/homogeneous_transform.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/homogeneous_transform_server.dir/build.make:76: CMakeFiles/homogeneous_transform_server.dir/src/homogeneous_transform_server.cpp.o] Erro 1
+gmake[2]: *** [CMakeFiles/homogeneous_transform_client.dir/build.make:76: CMakeFiles/homogeneous_transform_client.dir/src/homogeneous_transform_client.cpp.o] Erro 1
+gmake[1]: *** [CMakeFiles/Makefile2:594: CMakeFiles/homogeneous_transform_server.dir/all] Erro 2
+gmake[1]: ** Esperando que outros processos terminem.
+gmake[1]: *** [CMakeFiles/Makefile2:620: CMakeFiles/homogeneous_transform_client.dir/all] Erro 2
+gmake: *** [Makefile:146: all] Erro 2

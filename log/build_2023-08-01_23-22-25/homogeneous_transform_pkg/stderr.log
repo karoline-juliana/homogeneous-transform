@@ -1,0 +1,17 @@
+[31mCMake Error at CMakeLists.txt:13 (find_package):
+  By not providing "Findhomogeneous_transform_pkg.cmake" in CMAKE_MODULE_PATH
+  this project has asked CMake to find a package configuration file provided
+  by "homogeneous_transform_pkg", but CMake did not find one.
+
+  Could not find a package configuration file provided by
+  "homogeneous_transform_pkg" with any of the following names:
+
+    homogeneous_transform_pkgConfig.cmake
+    homogeneous_transform_pkg-config.cmake
+
+  Add the installation prefix of "homogeneous_transform_pkg" to
+  CMAKE_PREFIX_PATH or set "homogeneous_transform_pkg_DIR" to a directory
+  containing one of the above files.  If "homogeneous_transform_pkg" provides
+  a separate development package or SDK, be sure it has been installed.
+
+[0m

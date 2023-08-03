@@ -1,0 +1,16 @@
+@startuml
+    !define ROS2 http://www.plantuml.com/plantuml/uml/7SvD3e0m30Jl1SdXyR3t2jbH7N2Wb0AO2b6Se3sbe8t1j1HdX0gj9dbS22f20GpKGUNnO7Y1dY2fEaHLNE_LSeGp4K-KZD7GxjXjZBJqKJQl3-GoFZrGj-pZnKZut_4-5dXUn5kHaLbIi_ObNd3z1GlKvtzNQVnfdl8FZJ1ZELVt0zg7PT1NSoBZWjEz-DVLuoz5bfSe5kMcaLqVqCslFLIL9M-0j00
+
+    actor User
+
+    package "ROS 2" {
+    [Serviço de Transformação] as Service
+    [Cliente de Transformação] as Client
+    }
+
+    User -> Client: Informações do ponto e ângulo
+    Client -> Service: Requisição de serviço\n(ponto, ângulo)
+    Service --> Client: Resposta do serviço\n(ponto transformado)
+    Client --> User: Ponto transformado
+@enduml
+
