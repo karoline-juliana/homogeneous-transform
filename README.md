@@ -16,7 +16,11 @@ https://github.com/karoline-juliana/homogeneous-transform.git
 - Open a terminal
 - Open the workspace paste
 ```
-cd homogeneous_transform_ws
+cd homogeneous_transform
+```
+- Download the Eigen library
+```
+sudo apt-get install libeigen3-dev
 ```
 - Build the workspace with colcon
 ```
@@ -25,7 +29,7 @@ colcon build --packages-select homogeneous_transform_ws
 - Open another terminal
 - Go to workspace paste
 ```
-cd homogeneous_transform_ws
+cd homogeneous_transform
 ```
 - Source the setup files
 ```
@@ -38,7 +42,7 @@ ros2 run homogeneous_transform_pkg homogeneous_transform_server
 - Open another terminal
 -  Go to workspace paste
 ```
-cd homogeneous_transform_ws
+cd homogeneous_transform
 ```
 - Source the setup files
 ```
@@ -50,3 +54,12 @@ ros2 run homogeneous_transform_pkg homogeneous_transform_client angle x y z
 ```
 
 The result will show in the terminal.
+
+- Libraries used
+Eigen Libraries
+
+- Case Diagram
+![](https://github.com/karoline-juliana/homogeneous-transform/blob/main/utils/case_diagram.png)
+
+- Sequence Diagram
+![](https://github.com/karoline-juliana/homogeneous-transform/blob/main/utils/sequence_diagram.png)

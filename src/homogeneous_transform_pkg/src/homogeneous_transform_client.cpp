@@ -30,19 +30,34 @@ int main(int argc, char **argv)
     // Envio da solicitação ao serviço
     auto result = client->async_send_request(request);
 
-    // Aguardar a resposta do serviço
+    // Verificando se o resultado é válido antes de acessar
+    if (!result.valid()) {
+        RCLCPP_ERROR(node->get_logger(), "Erro: O resultado não é válido.");
+        rclcpp::shutdown();
+        return 1;
+    }
+
+    // Aguardando a resposta do service
     if (rclcpp::spin_until_future_complete(node, result) == rclcpp::FutureReturnCode::SUCCESS)
     {
-        if (result.get()->success)
-        {
-            RCLCPP_INFO(node->get_logger(), "Transformação realizada com sucesso.");
-            RCLCPP_INFO(node->get_logger(), "Ponto original (x, y, z): (%f, %f, %f)", request->x, request->y, request->z);
-            RCLCPP_INFO(node->get_logger(), "Ponto transformado (x, y, z): (%f, %f, %f)",
-                        result.get()->transformed_x, result.get()->transformed_y, result.get()->transformed_z);
-        }
-        else
-        {
-            RCLCPP_ERROR(node->get_logger(), "Falha na chamada do serviço: %s", result.get()->message.c_str());
+        try {
+            // Tentando obter o valor do resultado
+            auto response = result.get();
+
+            if (response->success)
+            {
+                RCLCPP_INFO(node->get_logger(), "Transformação realizada com sucesso.");
+                RCLCPP_INFO(node->get_logger(), "Ponto original (x, y, z): (%f, %f, %f)", request->x, request->y, request->z);
+                RCLCPP_INFO(node->get_logger(), "Ponto transformado (x, y, z): (%f, %f, %f)",
+                            result.get()->transformed_x, result.get()->transformed_y, result.get()->transformed_z);
+            }
+            else
+            {
+                RCLCPP_ERROR(node->get_logger(), "Falha na chamada do serviço: %s", response->message.c_str());
+            } // TODO: provavelmente o erro vem daqui, pesquisar depois
+        } catch (const std::future_error& e) {
+            // Captura e imprime a exceção em caso de erro
+            RCLCPP_ERROR(node->get_logger(), "Erro ao obter resultado do serviço: %s", e.what());
         }
     }
     else
