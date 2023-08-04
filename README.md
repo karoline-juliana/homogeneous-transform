@@ -55,11 +55,11 @@ ros2 run homogeneous_transform_pkg homogeneous_transform_client angle x y z
 
 The result will show in the terminal.
 
-- Libraries used
+## Libraries used
 Eigen Libraries
 
-- Case Diagram
+## Case Diagram
 ![](https://github.com/karoline-juliana/homogeneous-transform/blob/main/utils/case_diagram.png)
 
-- Sequence Diagram
+## Sequence Diagram
 ![](https://github.com/karoline-juliana/homogeneous-transform/blob/main/utils/sequence_diagram.png)
