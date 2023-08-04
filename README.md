@@ -14,7 +14,7 @@ The homogeneous matrix:
 https://github.com/karoline-juliana/homogeneous-transform.git
 ```
 - Open a terminal
-- Open the workspace paste
+- Open the workspace directory
 ```
 cd homogeneous_transform
 ```
@@ -27,7 +27,7 @@ sudo apt-get install libeigen3-dev
 colcon build --packages-select homogeneous_transform_ws
 ```
 - Open another terminal
-- Go to workspace paste
+- Go to workspace directory
 ```
 cd homogeneous_transform
 ```
@@ -40,7 +40,7 @@ source install/setup.bash
 ros2 run homogeneous_transform_pkg homogeneous_transform_server
 ```
 - Open another terminal
--  Go to workspace paste
+-  Go to workspace directory
 ```
 cd homogeneous_transform
 ```
